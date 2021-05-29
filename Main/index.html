@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="global-container">
+    <div id="container">
+      <div class="mobile-menu__cover"></div>
+      <header class="header">
+        <div class="header__inner">
+          <div class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="hero">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="images/kaigai.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/kokunai.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/anime.jpg" alt="">
+              </div>
+            </div>
+  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="main-content">
+          
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <nav class="mobile-menu__main">
+        <li class="mobile-menu__item">
+          <a href="#">
+            <div class="main-title">About Site</div>
+            <div class="sub-title">このサイトについて</div>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#">
+            <div class="main-title">Q&A</div>
+            <div class="sub-title">ご質問</div>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#">
+            <div class="main-title">About Me</div>
+            <div class="sub-title">このサイトの作者について</div>
+          </a>
+        </li>
+      </nav>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts/modules/hero-slider.js"></script>
+  <script src="scripts/modules/mobile-menu.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

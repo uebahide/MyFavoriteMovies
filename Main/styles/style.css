@@ -1,0 +1,149 @@
+.swiper-container {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  height: 400px;
+}
+
+.swiper-slide > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+}
+
+.mobile-menu__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mobile-menu__btn {
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.mobile-menu__btn span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.mobile-menu__main {
+  width: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+}
+
+.mobile-menu__item {
+  -webkit-transform: translate3d(0, 0, -1000px);
+          transform: translate3d(0, 0, -1000px);
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0 50px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.mobile-menu__item:nth-child(1) {
+  -webkit-transition-delay: 0.07s;
+          transition-delay: 0.07s;
+}
+
+.mobile-menu__item:nth-child(2) {
+  -webkit-transition-delay: 0.14s;
+          transition-delay: 0.14s;
+}
+
+.mobile-menu__item:nth-child(3) {
+  -webkit-transition-delay: 0.21s;
+          transition-delay: 0.21s;
+}
+
+.mobile-menu__item a {
+  text-decoration: none;
+}
+
+.menu-open #container {
+  -webkit-transform: translate(-300px, 60px);
+          transform: translate(-300px, 60px);
+  -webkit-box-shadow: 10px 1px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 1px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.menu-open .mobile-menu__cover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-open .mobile-menu__item {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+body {
+  margin: 0;
+}
+
+.main-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.sub-title {
+  font-size: 15px;
+  color: #353535;
+}
+
+#container {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  background-color: white;
+  z-index: 5;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */

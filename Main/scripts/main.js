@@ -2,27 +2,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
   new MobileMenu();
 
 
-  const SlideImage = document.querySelectorAll('.fade-img');
-
-  const callback = function(entries, observer){
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('inview')
+  const fadeImage = function(el, inview){
+      if(inview){
+        el.classList.add('inview')
       }else{
         // entry.target.classList.remove('inview');
       }
-    });
-  }
+  };
+  const so1 = new ScrollObserver('.fade-img', fadeImage);
 
-  const options = {
-    root: null,
-    rootMargin: '0px 0px',
-    threshold: 0
-  }
-
-  const Observer = new IntersectionObserver(callback, options);
-
-  SlideImage.forEach(el => {
-    Observer.observe(el);
-  });
+  
 })

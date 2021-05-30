@@ -1,0 +1,35 @@
+// .container{
+//   display: flex;
+//   margin-bottom: 200px;
+// }
+
+.fade-img{
+  width: 100%;
+  height: 150px;
+  opacity: 0;
+  transition: all 1s ease;
+  overflow: visible;
+
+  &.inview{
+    opacity: 1;
+    // @for $i from 1 through 10{
+    //   &:nth-child(#{$i}){
+    //     transition-delay: 0.07s * $i;
+    //   }
+    // }
+  }
+
+  
+  & > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+  }
+}
+
+.zoom{
+  &:hover{
+    transform: scale(1.1, 1.1);
+  }
+}

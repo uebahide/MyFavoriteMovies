@@ -3,8 +3,10 @@
 }
 
 .swiper-slide{
+  position: relative;
   overflow: hidden;
   height: 400px;
+
   & > img{
     object-fit: cover;
     height: 100%;
@@ -15,4 +17,14 @@
 .hero{
   padding-top: 100px;
   overflow: hidden;
+  @extend .pb-lg;
+
+  &__title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: $cWhite;
+  }
 }

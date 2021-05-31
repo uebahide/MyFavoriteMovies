@@ -172,11 +172,11 @@ body {
   padding-bottom: 20px;
 }
 
-.pb-lr, .category__title, .category__item {
+.pb-lr, .information__title, .category__title, .category__item {
   padding-bottom: 40px;
 }
 
-.pb-lg, .hero {
+.pb-lg, .hero, .information {
   padding-bottom: 100px;
 }
 
@@ -191,7 +191,7 @@ body {
   color: #353535;
 }
 
-.content-width, .category {
+.content-width, .information__title, .category {
   margin: 0 40px;
 }
 
@@ -213,6 +213,26 @@ body {
   height: 100px;
   width: 100%;
   background-color: transparent;
+}
+
+.header.triggered {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+}
+
+.information {
+  overflow: hidden;
+}
+
+.information__image {
+  position: relative;
+  z-index: 5;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  overflow: visible;
 }
 
 .category__inner {
@@ -245,6 +265,10 @@ body {
 @media screen and (min-width: 960px) {
   .fade-img {
     height: 280px;
+  }
+  .swiper-container > .swiper-wrapper > .swiper-slide {
+    -webkit-box-shadow: -6px 5px 25px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: -6px 5px 25px 3px rgba(0, 0, 0, 0.5);
   }
 }
 /*# sourceMappingURL=style.css.map */

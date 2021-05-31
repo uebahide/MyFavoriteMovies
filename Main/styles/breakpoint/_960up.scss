@@ -1,3 +1,12 @@
 .fade-img{
   height: 280px;
 }
+
+
+.swiper-container{
+  & > .swiper-wrapper{
+    & > .swiper-slide{
+      box-shadow: -6px 5px 25px 3px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

@@ -1,3 +1,26 @@
 .fade-img{
   height: 220px;
 }
+
+
+.footer{
+
+  &__nav{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+
+  &__copyright{
+    margin-right: 30px;
+  }
+}
